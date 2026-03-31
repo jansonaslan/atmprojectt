@@ -9,7 +9,10 @@ LANG = {
     "id": {
         "menu": "=== MENU ATM ===",
         "masukkan_nama_akun_anda : " : "masukkan nama akun anda : ",
+        "masukkan_pilihan : " : "masukkan pilihan : ",
         "nama_akun": "nama akun",
+        "lanjutkan (y/n) : ": "lanjutkan (y/n) : ",
+        "pembayaran_sukses_terima_kasih" : "pembayaran sukses, terima kasih",
         "saldo_anda : Rp. ": "saldo anda : Rp. {}",
         "cek_saldo": "cek saldo",
         "setor": "setor",
@@ -38,8 +41,8 @@ LANG = {
         "selamat_datang_di_BNI": "selamat datang di BNI",
         "selamat_datang_di_BSI": "selamat datang di BSI",
         "selamat_datang_di_BTN": "selamat datang di BTN",
-        "masukkan_nominal_yang_akan_anda_transfer": "masukkan nominal yang akan anda transfer",
-        "nominal_yang_akan_anda_transfer_adalah": "nominal yang akan anda transfer adalah",
+        "masukkan_nominal_yang_akan_anda_transfer : ": "masukkan nominal yang akan anda transfer : ",
+        "nominal_yang_akan_anda_transfer_adalah ": "nominal yang akan anda transfer adalah ",
         "lanjutkan": "lanjutkan",
         "transaksi_dibatalkan": "transaksi dibatalkan",
         "silahkan_ambil_kartu_atm_anda": "silahkan ambil kartu atm anda",
@@ -243,30 +246,30 @@ def tarik(user):
     cek_saldo(user)
 
 def bayar():
-    while True:
         print("\n" + T["=== PILIH_BANK ==="])
         print("1. BRI")
         print("2. BCA")
         print("3. BNI")
         print("4. BSI")
         print("5. BTN")
-        pilih = input(T["masukkan_pilihan"])
+        pilih = input(T["masukkan_pilihan : "])
 
         if pilih == "1":
             print(T["selamat_datang_di_BRI"])
-            nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer"])
-            print(T["nominal_yang_akan_anda_transfer_adalah" + nominal_transfer])
-            pilih = str(input(T["lanjutkan (y/n)"]))
+            nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
+            print(T["nominal_yang_akan_anda_transfer_adalah "] + nominal_transfer)
+            pilih = str(input(T["lanjutkan (y/n) : "]))
             if pilih == "y":
-                print(T[""])
+                print(T["pembayaran_sukses_terima_kasih"])
             elif pilih == "n":
                 print(T["transaksi_dibatalkan"])
                 print(T["silahkan_ambil_kartu_atm_anda"])
+                
 
         elif pilih == "2":
             print(T["selamat datang di BCA"])
-            nominal_transfer = input(T["masukkan nominal yang akan anda transfer"])
-            print(T["nominal yang akan anda transfer adalah" + nominal_transfer])
+            nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
+            print(T["nominal yang akan anda transfer adalah " + nominal_transfer])
             pilih = str(input(T["lanjutkan (y/n)"]))
             if pilih == "y":
                 print(T[""])
@@ -275,8 +278,8 @@ def bayar():
         
         elif pilih == "3":
             print(T["selamat datang di BNI"])
-            nominal_transfer = input(T["masukkan nominal yang akan anda transfer"])
-            print(T["nominal yang akan anda transfer adalah" + nominal_transfer])
+            nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
+            print(T["nominal yang akan anda transfer adalah " + nominal_transfer])
             pilih = str(input(T["lanjutkan (y/n)"]))
             if pilih == "y":
                 print(T[""])
@@ -285,8 +288,8 @@ def bayar():
         
         elif pilih == "4":
             print(T["selamat datang di BSI"])
-            nominal_transfer = input(T["masukkan nominal yang akan anda transfer"])
-            print(T["nominal yang akan anda transfer adalah" + nominal_transfer])
+            nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
+            print(T["nominal yang akan anda transfer adalah " + nominal_transfer])
             pilih = str(input(T["lanjutkan (y/n)"]))
             if pilih == "y":
                 print(T[""])
@@ -295,8 +298,8 @@ def bayar():
 
         elif pilih == "5":
             print(T["selamat datang di BTN"])
-            nominal_transfer = input(T["masukkan nominal yang akan anda transfer"])
-            print(T["nominal yang akan anda transfer adalah" + nominal_transfer])
+            nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
+            print(T["nominal yang akan anda transfer adalah " + nominal_transfer])
             pilih = str(input(T["lanjutkan (y/n)"]))
             if pilih == "y":
                 print(T[""])
