@@ -11,6 +11,7 @@ LANG = {
         "masukkan_nama_akun_anda : " : "masukkan nama akun anda : ",
         "masukkan_pilihan : " : "masukkan pilihan : ",
         "nama_akun": "nama akun",
+        "terima_kasih" : "terima kasih",
         "lanjutkan (y/n) : ": "lanjutkan (y/n) : ",
         "pembayaran_sukses_terima_kasih" : "pembayaran sukses, terima kasih",
         "saldo_anda : Rp. ": "saldo anda : Rp. {}",
@@ -44,7 +45,7 @@ LANG = {
         "masukkan_nominal_yang_akan_anda_transfer : ": "masukkan nominal yang akan anda transfer : ",
         "nominal_yang_akan_anda_transfer_adalah ": "nominal yang akan anda transfer adalah ",
         "lanjutkan": "lanjutkan",
-        "transaksi_dibatalkan": "transaksi dibatalkan",
+        "transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda": "transaksi dibatalkan, silahkan ambil kartu atm anda",
         "silahkan_ambil_kartu_atm_anda": "silahkan ambil kartu atm anda",
         "akun_anda_dalam_proteksi_bank": "akun anda dalam proteksi bank",
         "maaf_nama_anda_tidak_tersedia": "maaf nama anda tidak tersedia",
@@ -52,7 +53,7 @@ LANG = {
         "maaf_pin_anda_salah_silahkan_coba_lagi": "maaf pin anda salah silahkan coba lagi {}",
         "masukkan_nominal_setor": "masukkan nominal setor",
         "setor_berhasil": "setor berhasil",
-        "masukkan_nominal_tarik : ": "masukkan nominal tarik",
+        "masukkan_nominal_tarik : ": "masukkan nominal tarik : ",
         "saldo_tidak_cukup": "saldo tidak cukup",
         "penarikan_berhasil": "penarikan berhasil",
         "pin_anda_benar_selamat_datang": "pin anda benar selamat datang",
@@ -210,8 +211,6 @@ def informasi_akun():
     else:
         print(T["maaf_nama_anda_tidak_tersedia"])
 
-            
-        
 def cek_saldo(user):
     print(T["saldo_anda : Rp. "].format(accounts[user]['balance']))
 
@@ -245,6 +244,9 @@ def tarik(user):
     print(T["penarikan_berhasil"])
     cek_saldo(user)
 
+def keluar():
+    print(T["terima_kasih"])
+
 def bayar():
         print("\n" + T["=== PILIH_BANK ==="])
         print("1. BRI")
@@ -263,48 +265,48 @@ def bayar():
                 print(T["pembayaran_sukses_terima_kasih"])
             elif pilih == "n":
                 print(T["transaksi_dibatalkan"])
-                print(T["silahkan_ambil_kartu_atm_anda"])
+                print(T["transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda"])
                 
 
         elif pilih == "2":
-            print(T["selamat datang di BCA"])
+            print(T["selamat_datang_di_BCA"])
             nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
-            print(T["nominal yang akan anda transfer adalah " + nominal_transfer])
-            pilih = str(input(T["lanjutkan (y/n)"]))
+            print(T["nominal_yang_akan_anda_transfer_adalah "] + nominal_transfer)
+            pilih = str(input(T["lanjutkan (y/n) : "]))
             if pilih == "y":
-                print(T[""])
+                print(T["pembayaran_sukses_terima_kasih"])
             elif pilih == "n":
-                print("transaksi dibatalkan, silahkan ambil kartu atm anda")
+                print(T["transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda"])
         
         elif pilih == "3":
-            print(T["selamat datang di BNI"])
+            print(T["selamat_datang_di_BNI"])
             nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
-            print(T["nominal yang akan anda transfer adalah " + nominal_transfer])
-            pilih = str(input(T["lanjutkan (y/n)"]))
+            print(T["nominal_yang_akan_anda_transfer_adalah "] + nominal_transfer)
+            pilih = str(input(T["lanjutkan (y/n) : "]))
             if pilih == "y":
-                print(T[""])
+                print(T["pembayaran_sukses_terima_kasih"])
             elif pilih == "n":
-                print("transaksi dibatalkan, silahkan ambil kartu atm anda")
+                print(T["transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda"])
         
         elif pilih == "4":
-            print(T["selamat datang di BSI"])
+            print(T["selamat_datang_di_BSI"])
             nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
-            print(T["nominal yang akan anda transfer adalah " + nominal_transfer])
-            pilih = str(input(T["lanjutkan (y/n)"]))
+            print(T["nominal_yang_akan_anda_transfer_adalah "] + nominal_transfer)
+            pilih = str(input(T["lanjutkan (y/n) : "]))
             if pilih == "y":
-                print(T[""])
+                print(T["pembayaran_sukses_terima_kasih"])
             elif pilih == "n":
-                print("transaksi dibatalkan, silahkan ambil kartu atm anda")
+                print(T["transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda"])
 
         elif pilih == "5":
-            print(T["selamat datang di BTN"])
+            print(T["selamat_datang_di_BTN"])
             nominal_transfer = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
-            print(T["nominal yang akan anda transfer adalah " + nominal_transfer])
-            pilih = str(input(T["lanjutkan (y/n)"]))
+            print(T["nominal_yang_akan_anda_transfer_adalah "] + nominal_transfer)
+            pilih = str(input(T["lanjutkan (y/n) : "]))
             if pilih == "y":
-                print(T[""])
+                print(T["pembayaran_sukses_terima_kasih"])
             elif pilih == "n":
-                print("transaksi dibatalkan, silahkan ambil kartu atm anda")
+                print(T["transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda"])
         
         else:
             print(T["maaf pilihan anda tidak ada di sistem"])
@@ -316,6 +318,7 @@ def menu(user):
         print("2.", T["cek_saldo"])
         print("3.",  T["informasi_akun"])
         print("4.", T["bayar"])
+        print("5.", T["keluar"])
         pilih = input(T["input_pilihan"]).strip()
 
         if pilih == "1":
@@ -326,6 +329,8 @@ def menu(user):
             informasi_akun()
         elif pilih == "4":
             bayar()
+        elif pilih == "5":
+            keluar()
         else:
             print(T["pilihan_tidak_valid"])
 
