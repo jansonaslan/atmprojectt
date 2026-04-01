@@ -7,7 +7,6 @@ accounts = {
 #ini adalah asal dari lang_map
 LANG = {
     "id": {
-        "menu": "=== MENU ATM ===",
         "masukkan_nama_akun_anda : " : "masukkan nama akun anda : ",
         "masukkan_pilihan : " : "masukkan pilihan : ",
         "nama_akun": "nama akun",
@@ -19,7 +18,7 @@ LANG = {
         "setor": "setor",
         "tarik": "tarik",
         "keluar": "keluar",
-        "input_pilihan": "pilih menu: ",
+        "input_pilihan : ": "pilih menu : ",
         "login_berhasil": "login berhasil",
         "=== PILIH_MENU ===": "=== PILIH MENU ===",
         "=== PILIH_BANK ===": "=== PILIH BANK ===",
@@ -28,13 +27,11 @@ LANG = {
         "cek_saldo": "cek saldo",
         "informasi_akun": "informasi akun",
         "bayar": "bayar",
-        "masukkan_username": "masukkan username: ",
-        "masukkan_PIN: ": "masukkan PIN: ",
+        "masukkan_username : ": "masukkan username : ",
+        "masukkan_PIN : ": "masukkan PIN : ",
         "username_tidak_ditemukan": "username tidak ditemukan",
-        "selamat_datang_di_mandiri": "selamat datang di mandiri",
-        "transaksi_bebas_biaya_admin": "transaksi bebas biaya admin",
-        "pilih_bahasa": "pilih bahasa (1/2/3): ",
-        "bahasa_tidak_valid": "bahasa tidak valid menggunakan indonesia ",
+        "pilih_bahasa (1/2/3) : ": "pilih bahasa (1/2/3) : ",
+        "bahasa_tidak_valid": "pilihan bahasa tidak valid, menggunakan indonesia ",
         "pilih_bank": "pilih bank",
         "maaf_pilihan_anda_tidak_ada_di_sistem": "maaf pilihan anda tidak ada di sistem",
         "selamat_datang_di_BRI": "selamat datang di BRI",
@@ -56,33 +53,34 @@ LANG = {
         "masukkan_nominal_tarik : ": "masukkan nominal tarik : ",
         "saldo_tidak_cukup": "saldo tidak cukup",
         "penarikan_berhasil": "penarikan berhasil",
-        "pin_anda_benar_selamat_datang": "pin anda benar selamat datang",
-        "pilihan_tidak_valid_anda_akan_menggunakan_bahasa_indonesia": "pilihan tidak valid anda akan menggunakan bahasa indonesia",
+        "pin_anda_benar_selamat_datang": "pin anda benar, selamat datang",
     },
 
     "en": {
-        "menu": "=== ATM MENU ===",
-        "masukkan_nama_akun_anda : " : "masukkan nama akun anda : ",
-        "saldo": "your balance: Rp {}",
+        "masukkan_nama_akun_anda : " : "input your account name : ",
+        "masukkan_pilihan : " : "input choice : ",
+        "nama_akun": "account name",
+        "terima_kasih" : "thank you",
+        "lanjutkan (y/n) : ": "continue (y/n) : ",
+        "pembayaran_sukses_terima_kasih" : "payment success, thank you",
+        "saldo_anda : Rp. ": "your balance : Rp. {}",
         "cek_saldo": "balance check",
-        "saldo_anda : Rp. ": "saldo anda : Rp. {}",
         "setor": "deposit",
         "tarik": "withdraw",
         "keluar": "exit",
-        "input_pilihan": "choose menu: ",
+        "input_pilihan : ": "choose menu : ",
         "login_berhasil": "login success",
         "=== PILIH_MENU ===": "=== CHOOSE MENU ===",
+        "=== PILIH_BANK ===": "=== CHOOSE BANK ===",
         "menu": "menu",
         "tarik_tunai": "cash withdrawal",
         "cek_saldo": "balance check",
         "informasi_akun": "account information",
         "bayar": "pay",
-        "masukkan_username": "input username: ",
-        "masukkan_PIN: ": "input pin: ",
+        "masukkan_username : ": "input username : ",
+        "masukkan_PIN : ": "input pin : ",
         "username_tidak_ditemukan": "username is not found",
-        "selamat_datang_di_mandiri": "welcome to mandiri",
-        "transaksi_bebas_biaya_admin": "transaction whithout admin tax",
-        "pilih_bahasa (1/2/3)": "choose language (1/2/3): ",
+        "pilih_bahasa (1/2/3) : ": "choose language (1/2/3) : ",
         "bahasa_tidak_valid": "language invalid, use indonesian ",
         "pilih_bank": "choose bank",
         "maaf_pilihan_anda_tidak_ada_di_sistem": "sorry your choice not in the system",
@@ -92,46 +90,46 @@ LANG = {
         "selamat_datang_di_BSI": "welcome to BSI",
         "selamat_datang_di_BTN": "welcome to BTN",
         "masukkan_nominal_yang_akan_anda_transfer": "enter the amount you want to transfer",
-        "nominal_yang_akan_anda_transfer_adalah": "nominal yang akan anda transfer adalah",
+        "nominal_yang_akan_anda_transfer_adalah ": "nominal yang akan anda transfer adalah",
         "lanjutkan": "continue",
-        "transaksi_dibatalkan": "transaction is cancelled",
-        "silahkan_ambil_kartu_atm_anda": "please take your atm card",
+        "transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda": "transaction is cancelled, please take your atm card",
         "akun_anda_dalam_proteksi_bank": "you account is under bank protection",
         "maaf_nama_anda_tidak_tersedia": "sorry your name is not available",
-        "masukkan_nama_akun_anda": "input your account name",
         "akunmu_diblokir_silahkan_hubungi_pihak_bank": "your accoount is blocked please call bank",
         "maaf_pin_anda_salah_silahkan_coba_lagi": "sorry your pin is wrong please try again {}" ,
         "masukkan_nominal_setor": "input deposit nominal",
         "setor_berhasil": "deposit is successfull",
-        "masukkan_nominal_tarik : ": "input withdrawal nominal",
+        "masukkan_nominal_tarik : ": "input withdrawal nominal : ",
         "saldo_tidak_cukup": "balance is not enough",
         "penarikan_berhasil": "withdrawall successfull",
-        "pin_anda_benar_selamat_datang": "your pin is true welcome",
-        "pilihan_tidak_valid_anda_akan_menggunakan_bahasa_indonesia": "choice is invalid you will use indonesian",
+        "pin_anda_benar_selamat_datang": "your pin is true, welcome",
     },
 
     "jv": {
-        "menu": "=== ATM MENU ===",
-        "saldo": "saldomu: Rp {}",
-        "saldo_anda : Rp. ": "saldo anda : Rp. {}",
+        "masukkan_nama_akun_anda : " : "lebokke jeneng akunmu : ",
+        "masukkan_pilihan : " : "lebokke pilihan : ",
+        "nama_akun": "jeneng akun",
+        "terima_kasih" : "matur nuwun",
+        "lanjutkan (y/n) : ": "lanjutke (y/n) : ",
+        "pembayaran_sukses_terima_kasih" : "pembayaran sukses, matur nuwun",
+        "saldo_anda : Rp. ": "saldomu : Rp. {}",
         "cek_saldo": "ngecek saldo",
         "setor": "nyetor",
         "tarik": "narik",
         "keluar": "metu",
-        "input_pilihan": "pilih menu: ",
+        "input_pilihan : ": "pilih menu : ",
         "login_berhasil": "login sukses",
         "=== PILIH_MENU ===": "=== MILIH MENU ===",
+        "=== PILIH_BANK ===": "=== MILIH BANK ===",
         "menu": "menu",
         "tarik_tunai": "narik tunai",
         "cek_saldo": "ngecek saldo",
         "informasi_akun": "informasi akun",
         "bayar": "mbayar",
-        "masukkan_username": "lebokke jeneng: ",
-        "masukkan_PIN: ": "lebokke pin: ",
-        "username_tidak_ditemukan": "jenengmu ra ketemu",
-        "selamat_datang_di_mandiri": "sugeng rawuh ing mandiri",
-        "transaksi_bebas_biaya_admin": "transaksi ora nganggo biaya admin",
-        "pilih_bahasa (1/2/3)": "pilih bahasa (1/2/3): ",
+        "masukkan_username : ": "lebokke jeneng : ",
+        "masukkan_PIN : ": "lebokke pin : ",
+        "username_tidak_ditemukan": "jenengmu ra ketemu cok",
+        "pilih_bahasa (1/2/3) : ": "milih bahasa (1/2/3) : ",
         "bahasa_tidak_valid": "bahasa ora cocok, nganggo indonesia ",
         "pilih_bank": "milih bank",
         "maaf_pilihan_anda_tidak_ada_di_sistem": "ngapurane pilihanmu ora ono neng sistem",
@@ -140,11 +138,10 @@ LANG = {
         "selamat_datang_di_BNI": "sugeng rawuh ing BNI",
         "selamat_datang_di_BSI": "sugeng rawuh ing BSI",
         "selamat_datang_di_BTN": "sugeng rawuh ing BTN",
-        "masukkan_nominal_yang_akan_anda_transfer": "lebokke nominal seng arep kok transfer",
-        "nominal_yang_akan_anda_transfer_adalah": "nominal seng arep kok transfer yaiku",
+        "masukkan_nominal_yang_akan_anda_transfer : ": "lebokke nominal seng arep kok transfer : ",
+        "nominal_yang_akan_anda_transfer_adalah ": "nominal seng arep kok transfer yaiku",
         "lanjutkan": "lanjutke",
-        "transaksi_dibatalkan": "transaksi dibatalke",
-        "silahkan_ambil_kartu_atm_anda": "tulung jipuk kartu atm mu",
+        "transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda": "transaksi dibatalke, mangga jupuk kartu atm e sampean",
         "akun_anda_dalam_proteksi_bank": "akunmu dilindungi bank",
         "maaf_nama_anda_tidak_tersedia": "ngapurane jenengmu ora ono",
         "masukkan_nama_akun_anda": "lebokke jeneng akunmu",
@@ -152,11 +149,10 @@ LANG = {
         "maaf_pin_anda_salah_silahkan_coba_lagi": "ngapurane pin mu salah dijajal maneh yo {}" ,
         "masukkan_nominal_setor": "lebokke nominal seng arep kok setor",
         "setor_berhasil": "setoran sukses",
-        "masukkan_nominal_tarik : ": "lebokke nominal seng arep ditarik",
-        "saldo_tidak_cukup": "saldomu ra cukup",
+        "masukkan_nominal_tarik : ": "lebokke nominal seng arep ditarik : ",
+        "saldo_tidak_cukup": "saldomu ra cukup cok",
         "penarikan_berhasil": "penarikan sukses",
-        "pin_anda_benar_selamat_datang": "pin mu bener sugeng rawuh",
-        "pilihan_tidak_valid_anda_akan_menggunakan_bahasa_indonesia": "pilihanmu ora iso koe saiki nganggo bahasa indonesia wae",
+        "pin_anda_benar_selamat_datang": "pin mu bener, sugeng rawuh",
     },
 }
 
@@ -171,7 +167,7 @@ lang_input = input("pilih bahasa (1/2/3) : ")
 lang_map = {"1": "id", "2": "en", "3": "jv"}
 lang_code = lang_map.get(lang_input, "id") #disini dia mengambil kode dari lang map, apabila kode tidak ditemukan, maka pakai "id"
 if lang_code not in LANG:
-    print("pilihan tidak valid anda akan menggunakan bahasa indonesia")
+    print("pilihan bahasa tidak valid anda akan menggunakan bahasa indonesia")
     lang_code = "1"
     
 T = LANG[lang_code]
@@ -180,7 +176,7 @@ T = LANG[lang_code]
 def authenticate(acct_id, max_attempts=3):
     attempts = max_attempts
     while attempts > 0:
-        pin = input(T["masukkan_PIN: "])
+        pin = input(T["masukkan_PIN : "])
         if pin == accounts[acct_id]["pin"]:
             print(T["pin_anda_benar_selamat_datang"])
             return True
@@ -310,7 +306,7 @@ def bayar():
                 print(T["transaksi_dibatalkan_silahkan_ambil_kartu_atm_anda"])
         
         else:
-            print(T["maaf pilihan anda tidak ada di sistem"])
+            print(T["maaf_pilihan_anda_tidak_ada_di_sistem"])
 
 def menu(user):
     while True:
@@ -320,7 +316,7 @@ def menu(user):
         print("3.",  T["informasi_akun"])
         print("4.", T["bayar"])
         print("5.", T["keluar"])
-        pilih = input(T["input_pilihan"]).strip()
+        pilih = input(T["input_pilihan : "]).strip()
 
         if pilih == "1":
             tarik(user)
@@ -336,7 +332,7 @@ def menu(user):
             print(T["pilihan_tidak_valid"])
 
 while True:
-    username = input(T["masukkan_username"]).strip()
+    username = input(T["masukkan_username : "]).strip()
     if username not in accounts:
         print(T["username_tidak_ditemukan"])
         continue
