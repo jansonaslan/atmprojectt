@@ -62,6 +62,7 @@ LANG = {
 
     "en": {
         "menu": "=== ATM MENU ===",
+        "masukkan_nama_akun_anda : " : "masukkan nama akun anda : ",
         "saldo": "your balance: Rp {}",
         "cek_saldo": "balance check",
         "saldo_anda : Rp. ": "saldo anda : Rp. {}",
