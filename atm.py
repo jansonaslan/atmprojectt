@@ -181,7 +181,7 @@ def authenticate(acct_id, max_attempts=3):
             print(T["pin_anda_benar_selamat_datang"])
             return True
         attempts -= 1
-        print(T["maaf_pin_anda_salah_silahkan_coba_lagi {attempts}"])
+        print(T["maaf_pin_anda_salah_silahkan_coba_lagi"])
     print(T["akunmu_diblokir_silahkan_hubungi_pihak_bank"])
     return False
 
