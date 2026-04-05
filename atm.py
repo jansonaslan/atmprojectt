@@ -308,6 +308,30 @@ def bayar():
         else:
             print(T["maaf_pilihan_anda_tidak_ada_di_sistem"])
 
+def transfer_antara_rekening(user):
+    rekening_tujuan = input(T["masukka_ nama_rekening_tujuan"]).strip()
+    if rekening_tujuan not in accounts:
+        print(T["rekening_tujuan_tidak_ditemukan"])
+    if rekening_tujuan == user:
+        print(T["tidak_bisa_transfer_ke_rekening_sendiri"])
+        return
+    
+    nominal = input(T["masukkan_nominal_yang_akan_anda_transfer : "])
+    ok, msg = validate_nominal(nominal)
+    if not ok:
+        print(msg)
+        return
+
+    n = int(nominal)
+    if n > accounts[user]["balance"]:
+        print(T["saldo_tidak_cukup"])
+        return
+    
+    accounts[user]["balance"] -= n
+    accounts[rekening_tujuan]["balance"] += n
+
+    print(T["transfer_berhasil_saldo_anda_sekarang: Rp. "] + {accounts[user['balance']]})
+
 def menu(user):
     while True:
         print("\n" + T["=== PILIH_MENU ==="])
