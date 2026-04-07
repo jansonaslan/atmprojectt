@@ -54,6 +54,11 @@ LANG = {
         "saldo_tidak_cukup": "saldo tidak cukup",
         "penarikan_berhasil": "penarikan berhasil",
         "pin_anda_benar_selamat_datang": "pin anda benar, selamat datang",
+        "masukkan_nama_rekening_tujuan": "masukkan nama rekening tujuan",
+        "rekening_tujuan_tidak_ditemukan": "rekening tujuan tidak ditemukan",
+        "tidak_bisa_transfer_ke_rekening_sendiri": "tidak bisa transfer ke rekening",
+        "masukkan_nominal_yang_akan_anda_transfer": "masukkan nominal yang akan anda transfer",
+        "transfer_berhasil_saldo_anda_sekarang : Rp. " : "transfer berhasil, saldo anda sekarang : Rp. {}",
     },
 
     "en": {
@@ -103,6 +108,7 @@ LANG = {
         "saldo_tidak_cukup": "balance is not enough",
         "penarikan_berhasil": "withdrawall successfull",
         "pin_anda_benar_selamat_datang": "your pin is true, welcome",
+        "masukkan_nama_rekening_tujuan": "input "
     },
 
     "jv": {
@@ -308,8 +314,8 @@ def bayar():
         else:
             print(T["maaf_pilihan_anda_tidak_ada_di_sistem"])
 
-def transfer_antara_rekening(user):
-    rekening_tujuan = input(T["masukka_ nama_rekening_tujuan"]).strip()
+def transfer_antar_rekening(user):
+    rekening_tujuan = input(T["masukkan_nama_rekening_tujuan"]).strip()
     if rekening_tujuan not in accounts:
         print(T["rekening_tujuan_tidak_ditemukan"])
     if rekening_tujuan == user:
@@ -339,7 +345,8 @@ def menu(user):
         print("2.", T["cek_saldo"])
         print("3.",  T["informasi_akun"])
         print("4.", T["bayar"])
-        print("5.", T["keluar"])
+        print("5.", T["transfer_antar_rekening"])
+        print("6.", T["keluar"])
         pilih = input(T["input_pilihan : "]).strip()
 
         if pilih == "1":
@@ -351,6 +358,8 @@ def menu(user):
         elif pilih == "4":
             bayar()
         elif pilih == "5":
+            transfer_antar_rekening(user)
+        elif pilih == "6":
             keluar()
         else:
             print(T["pilihan_tidak_valid"])
