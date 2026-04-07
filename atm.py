@@ -59,6 +59,7 @@ LANG = {
         "tidak_bisa_transfer_ke_rekening_sendiri": "tidak bisa transfer ke rekening",
         "masukkan_nominal_yang_akan_anda_transfer": "masukkan nominal yang akan anda transfer",
         "transfer_berhasil_saldo_anda_sekarang : Rp. " : "transfer berhasil, saldo anda sekarang : Rp. {}",
+        "transfer_antar_rekening" : "transfer antar rekening", 
     },
 
     "en": {
@@ -108,7 +109,9 @@ LANG = {
         "saldo_tidak_cukup": "balance is not enough",
         "penarikan_berhasil": "withdrawall successfull",
         "pin_anda_benar_selamat_datang": "your pin is true, welcome",
-        "masukkan_nama_rekening_tujuan": "input "
+        "masukkan_nama_rekening_tujuan": "input ",
+        "rekening_tujuan_tidak ditemukan" : "destination account is not found",
+
     },
 
     "jv": {
