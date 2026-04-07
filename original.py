@@ -1,4 +1,5 @@
 import sys
+
 accounts = {
     "janson" : {"pin": "123456", "balance": 100000000},
     "griselda" : {"pin": "654321", "balance" : 90000000},
@@ -335,6 +336,11 @@ while True:
     if authenticate(username):
         menu(username)
         break
-
     else:
-        print("Pilihan tidak ada")
+        print(T["akunmu_diblokir_silahkan_hubungi_pihak_bank"])
+        break
+
+
+
+    
+
