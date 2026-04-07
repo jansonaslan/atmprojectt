@@ -111,6 +111,10 @@ LANG = {
         "pin_anda_benar_selamat_datang": "your pin is true, welcome",
         "masukkan_nama_rekening_tujuan": "input ",
         "rekening_tujuan_tidak ditemukan" : "destination account is not found",
+        "tidak_bisa_transfer_ke_rekening_sendiri" : "don't transfer to self account",
+        "masukkan_nominal_yang_akan_anda_transfer" : "input nominal while you to transfer",
+        "transfer_berhasil_saldo_anda_sekarang : Rp. " : "transfer success, your balance : Rp. {}",
+        "transfer_antar_rekening" : "transfer another account", 
 
     },
 
